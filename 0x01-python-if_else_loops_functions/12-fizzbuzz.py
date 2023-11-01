@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 def fizzbuzz():
     for i in range(1, 101):
@@ -10,6 +10,7 @@ def fizzbuzz():
             print("Buzz", end=" ")
         else:
             print(i, end=" ")
+
 
 if __name__ == '__main__':
     fizzbuzz()
