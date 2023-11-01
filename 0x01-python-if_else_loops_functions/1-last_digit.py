@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
 import random
+
 
 def corrected_last_digit_description(number):
     # Extract the last digit
@@ -26,4 +26,3 @@ def corrected_last_digit_description(number):
 if __name__ == '__main__':
     number = random.randint(-10000, 10000)
     print(corrected_last_digit_description(number))
-
