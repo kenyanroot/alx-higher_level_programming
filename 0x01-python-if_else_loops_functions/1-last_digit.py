@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 import random
 
+
 def corrected_last_digit_description(number):
     # Extract the last digit
     last_digit = number % 10 if number >= 0 else (number % -10) * -1
-    
+
     if number < 0:
         last_digit *= -1
 
