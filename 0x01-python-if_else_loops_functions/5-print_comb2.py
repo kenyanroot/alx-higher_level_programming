@@ -7,5 +7,6 @@ def print_numbers():
         else:
             print("{:02d}".format(i))
 
+
 if __name__ == '__main__':
     print_numbers()
