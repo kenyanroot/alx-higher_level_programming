@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import random
 
-
 def corrected_last_digit_description(number):
     # Extract the last digit
     last_digit = number % 10 if number >= 0 else (number % -10) * -1
@@ -19,6 +18,7 @@ def corrected_last_digit_description(number):
         output += " and is 0"
     else:
         output += " and is less than 6 and not 0"
+
     return output
 
 
