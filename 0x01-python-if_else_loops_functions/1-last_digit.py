@@ -22,7 +22,6 @@ def corrected_last_digit_description(number):
 
     return output
 
-
 if __name__ == '__main__':
     number = random.randint(-10000, 10000)
     print(corrected_last_digit_description(number))
