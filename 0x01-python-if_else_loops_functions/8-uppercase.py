@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
-
-def uppercase(str):
+def uppercase(s):
     result = ""
-    for char in str:
+    for char in s:
         if 'a' <= char <= 'z':  # Check if char is lowercase
             result += chr(ord(char) - 32)
         else:
@@ -12,5 +11,4 @@ def uppercase(str):
 
 
 if __name__ == '__main__':
-    uppercase("best")
     uppercase("Best School 98 Battery street")
