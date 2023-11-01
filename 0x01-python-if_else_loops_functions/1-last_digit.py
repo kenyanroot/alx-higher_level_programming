@@ -19,8 +19,8 @@ def corrected_last_digit_description(number):
         output += " and is 0"
     else:
         output += " and is less than 6 and not 0"
-
     return output
+
 
 if __name__ == '__main__':
     number = random.randint(-10000, 10000)
