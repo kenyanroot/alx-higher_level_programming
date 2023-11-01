@@ -8,5 +8,6 @@ def print_combinations():
             else:
                 print("{:d}{:d}, ".format(i, j), end="")
 
+
 if __name__ == '__main__':
     print_combinations()
