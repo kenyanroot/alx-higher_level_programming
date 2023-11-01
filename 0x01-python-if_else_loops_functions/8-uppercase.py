@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+
 
 def uppercase(str):
     result = ""
@@ -8,6 +9,7 @@ def uppercase(str):
         else:
             result += char
     print(result)
+
 
 if __name__ == '__main__':
     uppercase("best")
