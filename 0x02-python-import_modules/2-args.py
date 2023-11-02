@@ -2,6 +2,7 @@
 
 import sys
 
+
 def main():
     num_args = len(sys.argv) - 1  # Subtract 1 for the script name itself
     if num_args == 0:
