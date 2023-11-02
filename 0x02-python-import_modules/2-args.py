@@ -14,5 +14,6 @@ def main():
     for i, arg in enumerate(sys.argv[1:], start=1):  # Skip the script name
         print(f"{i}: {arg}")
 
+
 if __name__ == "__main__":
     main()
