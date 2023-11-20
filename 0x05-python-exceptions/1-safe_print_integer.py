@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 def safe_print_integer(value):
     """
     Print an integer value followed by a new line.
@@ -14,6 +17,7 @@ def safe_print_integer(value):
         return True
     except (ValueError, TypeError):
         return False
+
 
 # Test cases
 value = 89

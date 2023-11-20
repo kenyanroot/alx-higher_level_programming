@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 def safe_print_list_integers(my_list=[], x=0):
     """
     Print the first x elements of a list that are integers.
@@ -18,6 +21,7 @@ def safe_print_list_integers(my_list=[], x=0):
             continue
     print()  # New line after printing integers
     return count
+
 
 # Test cases
 my_list = [1, 2, 3, 4, 5]

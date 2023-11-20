@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 def safe_print_list(my_list=[], x=0):
     """
     Print x elements of a list on the same line.
@@ -16,6 +19,7 @@ def safe_print_list(my_list=[], x=0):
             break
     print()  # New line after printing list elements
     return count
+
 
 # Test cases
 my_list = [1, 2, 3, 4, 5]
