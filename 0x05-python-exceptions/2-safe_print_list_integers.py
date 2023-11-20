@@ -1,23 +1,23 @@
 #!/usr/bin/python3
 
 
-def safe_print_division(a, b):
+def safe_print_list_integers(my_list=[], x=0):
     """
-    Divides two integers and prints the result.
+    Prints the first x elements of a list that are integers.
 
     Args:
-    a (int): The dividend.
-    b (int): The divisor.
+    my_list (list): The list to be printed from, can contain any type.
+    x (int): The number of elements to access in my_list.
 
     Returns:
-    float or None: The result of the division, or None if the division
-                   is not possible.
+    int: The actual number of integers printed.
     """
-    result = None
-    try:
-        result = a / b
-    except ZeroDivisionError:
-        result = None
-    finally:
-        print("Inside result: {}".format(result))
-        return result
+    count = 0
+    for i in range(x):
+        try:
+            print("{:d}".format(my_list[i]), end="")
+            count += 1
+        except (TypeError, ValueError, IndexError):
+            continue
+    print()  # New line after printing integers
+    return count
