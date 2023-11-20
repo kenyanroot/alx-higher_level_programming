@@ -20,4 +20,4 @@ def safe_print_list_integers(my_list=[], x=0):
         except (ValueError, TypeError, IndexError):
             continue
     print()  # New line after printing integers
-    return count`
+    return count
