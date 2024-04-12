@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""A script that fetches the 10 most recent commits from a given repository and user."""
+"""
+A script that fetches the 10 most recent commits from a given repository
+and user.
+"""
 
 import requests
 import sys
