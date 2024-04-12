@@ -3,6 +3,7 @@
 Module that contains the function find_peak
 """
 
+
 def find_peak(list_of_integers):
     """
     Finds a peak element in a list of unsorted integers.
