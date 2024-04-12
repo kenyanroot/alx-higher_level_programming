@@ -1,13 +1,6 @@
 #!/bin/bash
+# Sends a GET request to the provided URL and displays the body of the response if the status code is 200
 
-# Get the URL from the command line argument
 url=$1
-
-# Use curl to send a GET request to the URL and get the response body
 response=$(curl -s -o /dev/null -w "%{http_code}" "$url")
-body=$(curl -s "$url")
-
-# Check the response status code and display the body if it's 200
-if [ "$response" -eq 200 ]; then
-    echo "$body"
-fi
+if [ "$response" -eq 200 ]; then curl -s "$url"; fi
