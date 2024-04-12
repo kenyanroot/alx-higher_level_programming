@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-"""0x11. Python - Network #1, task 4. What's my status? #1
+"""
+Fetches https://alx-intranet.hbtn.io/status
 """
 
-if __name__ == "__main__":
-    from requests import get
+import requests
 
-    response = get('https://intranet.hbtn.io/status')
-    print('Body response:\n\t- type: {}\n\t- content: {}'.format(
-        type(response.text), response.text))
+if __name__ == "__main__":
+    url = 'https://alx-intranet.hbtn.io/status'
+    response = requests.get(url)
+
+    print("Body response:")
+    print(f"\t- type: {type(response.text)}")
+    print(f"\t- content: {response.text}")
